@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hib.swing">
+    <class name="OrderTable" table="OrderTable">
+<!--        <id name="foodId">
+            <generator class="native"/>
+        </id>-->
+       
+         <id name="name" column="name"/>
+        <property name="price" column="price"/>
+        <property name="quantity" column="quantity"/>
+        <property name="total" column="total"/>
+         <property name="grandTotal" column="grandTotal"/>
+        
+   </class>
+</hibernate-mapping>
+
